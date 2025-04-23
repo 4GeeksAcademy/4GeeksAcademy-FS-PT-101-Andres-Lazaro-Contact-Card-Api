@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 
 	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
+		<nav className=" navbar navbar-light bg-light my-4 pb-4">
+			<div className="container ">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+					<button className=" btn btn-primary mx-3 ">Listado de Contactos </button>
 				</Link>
 				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
+					<Link to="/new_contact">
+						<button className="btn btn-primary mx-3">Create Contact</button>
 					</Link>
+
+					<button className="btn btn-danger">Delete All Contact </button> {/* Falta implementar la funcionalidad de este boton*/ }
 				</div>
 			</div>
 		</nav>
